@@ -14,7 +14,7 @@
 								<xsl:attribute name="height">
 									<xsl:value-of select="root/графика/@высота"/>
 								</xsl:attribute>
-								<xsl:for-each select="root/графика/элипс">
+								<xsl:for-each select="root/графика/эллипс">
 									<xsl:element name="ellipse">
 										<xsl:attribute name="id">
 											<xsl:value-of select="@id"/>
