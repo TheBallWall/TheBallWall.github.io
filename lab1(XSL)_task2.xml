@@ -9,12 +9,12 @@
 						<body>
 							<xsl:element name="svg">
 								<xsl:attribute name="width">
-									<xsl:value-of select="графика/@ширина"/>
+									<xsl:value-of select="root/графика/@ширина"/>
 								</xsl:attribute>
 								<xsl:attribute name="height">
-									<xsl:value-of select="графика/@высота"/>
+									<xsl:value-of select="root/графика/@высота"/>
 								</xsl:attribute>
-								<xsl:for-each select="графика/элипс">
+								<xsl:for-each select="root/графика/элипс">
 									<xsl:element name="ellipse">
 										<xsl:attribute name="id">
 											<xsl:value-of select="@id"/>
